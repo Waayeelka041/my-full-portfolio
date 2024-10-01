@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import bloodDonationScreenshot from "../Images/bloodHome.jpg"; // Import screenshot for blood donation app
 import blooddashboard from "../Images/dashboard.jpg"; // Import screenshot for blood donation app
-import EcomerceHome from "../Images/ecomerce Home.jpg"
-import EcomerceDashboard from "../Images/eComerce-dashbord.jpg"
+import EcomerceHome from "../Images/ecomerce Home.jpg";
+import EcomerceDashboard from "../Images/eComerce-dashbord.jpg";
 
 const Projects = () => {
   // State to manage the visibility of screenshots
@@ -16,13 +16,13 @@ const Projects = () => {
   };
 
   return (
-    <div className="py-10 bg-slate-50 px-[70px]">
-      <h1 className="font-bold text-4xl text-center mb-8">My Main Projects  </h1>
-      <div className="flex justify-center gap-16 flex-wrap">
+    <div className="py-10 bg-slate-50  sm:px-[70px]">
+      <h1 className="font-bold text-4xl text-center mb-8">My Main Projects</h1>
+      <div className="flex justify-center gap-8 flex-wrap">
 
         {/* Project 1: Blood Donation Web Application */}
         <div 
-          className="w-[500px] rounded-lg bg-white shadow-lg p-5 flex flex-col items-center transition-transform duration-300 hover:scale-105 cursor-pointer" 
+          className="w-full sm:w-[500px] rounded-lg bg-white shadow-lg p-5 flex flex-col items-center transition-transform duration-300 hover:scale-105 cursor-pointer" 
           onClick={() => handleCardClick("bloodDonation")}
         >
           <FaHeart className="w-[80px] mb-4 text-red-600" />
@@ -34,16 +34,16 @@ const Projects = () => {
             Included search functionality for filtering donors by city and blood type, along with responsive design and secure form validation.
           </p>
           {showScreenshot === "bloodDonation" && (
-            <img className="w-full h-[150px]  rounded-md mt-3" src={bloodDonationScreenshot} alt="Blood Donation App Screenshot" />
-          )}
-          {showScreenshot === "bloodDonation" && (
-            <img className="w-full h-[150px]  rounded-md mt-3" src={blooddashboard} alt="Blood Donation App Screenshot" />
+            <>
+              <img className="w-full h-[150px] object-cover rounded-md mt-3" src={bloodDonationScreenshot} alt="Blood Donation App Screenshot" />
+              <img className="w-full h-[150px] object-cover rounded-md mt-3" src={blooddashboard} alt="Blood Donation App Screenshot" />
+            </>
           )}
         </div>
 
         {/* Project 2: E-commerce Website */}
         <div 
-          className="w-[500px] rounded-lg bg-white shadow-lg p-5 flex flex-col items-center transition-transform duration-300 hover:scale-105 cursor-pointer" 
+          className="w-full sm:w-[500px] rounded-lg bg-white shadow-lg p-5 flex flex-col items-center transition-transform duration-300 hover:scale-105 cursor-pointer" 
           onClick={() => handleCardClick("ecommerce")}
         >
           <FaShoppingCart className="w-[80px] mb-4 text-green-600" />
@@ -55,10 +55,10 @@ const Projects = () => {
             Utilized React for the front-end and Node.js with MongoDB for the back-end.
           </p>
           {showScreenshot === "ecommerce" && (
-            <img className="w-full h-[150px] object-cover rounded-md mt-3" src={EcomerceHome} alt="E-commerce App Screenshot" />
-          )}
-          {showScreenshot === "ecommerce" && (
-            <img className="w-full h-[150px] object-cover rounded-md mt-3" src={EcomerceDashboard} alt="E-commerce App Screenshot" />
+            <>
+              <img className="w-full h-[150px] object-cover rounded-md mt-3" src={EcomerceHome} alt="E-commerce App Screenshot" />
+              <img className="w-full h-[150px] object-cover rounded-md mt-3" src={EcomerceDashboard} alt="E-commerce App Screenshot" />
+            </>
           )}
         </div>
 

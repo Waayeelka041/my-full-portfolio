@@ -4,10 +4,10 @@ import { SiMongodb, SiExpress } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="bg-slate-50 pl-[70px] flex px-[70px] py-10 gap-10 relative">
-      <div className="mx-[50px]">
-        <h1 className="text-4xl font-bold mb-6">My Professional Skills</h1>
-        <p className="text-lg mb-4">
+    <div className="bg-slate-50 px-4 sm:px-[70px] py-10 flex flex-col items-center">
+      <div className="max-w-screen-lg w-full">
+        <h1 className="text-4xl font-bold mb-6 text-center">My Professional Skills</h1>
+        <p className="text-lg mb-4 text-center">
           I have acquired skills in HTML, CSS, Javascript, and the MERN stack
           (MongoDB, Express.js, React.js, Node.js) through various courses and
           projects. Below are some of my key skills:
@@ -79,23 +79,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-
-      {/* Skills Images */}
-      {/* <div className="flex flex-col">
-        <img
-          className="w-[600px] h-[200px] rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
-          src="https://img.freepik.com/free-photo/operation-process-performance-development-icon_53876-16541.jpg"
-          alt="skills"
-        />
-        <img
-          className="w-[600px] h-[220px] mt-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
-          src="https://img.freepik.com/free-photo/html-programming-advanced-technology-web-concept_53876-124133.jpg"
-          alt="skills"
-        />
-      </div> */}
-
-      {/* Web Development Image */}
-   
     </div>
   );
 };
