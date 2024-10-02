@@ -34,13 +34,13 @@ const Skills = () => {
           </div>
 
           {/* JavaScript Skill */}
-          <div className="bg-white hover:bg-blue-100 shadow-lg rounded-lg p-4 flex justify-between items-center transform hover:scale-105 transition duration-300">
+          <d className="bg-white hover:bg-blue-100 shadow-lg rounded-lg p-4 flex justify-between items-center transform hover:scale-105 transition duration-300">
             <div className="flex items-center">
               <FaJs className="text-5xl text-yellow-500 mr-4" />
               <h1 className="text-xl font-bold">JavaScript</h1>
             </div>
             <h1 className="text-xl font-bold">85%</h1>
-          </div>
+          </d>
 
           {/* MongoDB */}
           <div className="bg-white hover:bg-green-100 shadow-lg rounded-lg p-4 flex justify-between items-center transform hover:scale-105 transition duration-300">

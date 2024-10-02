@@ -34,10 +34,10 @@ const Projects = () => {
             Included search functionality for filtering donors by city and blood type, along with responsive design and secure form validation.
           </p>
           {showScreenshot === "bloodDonation" && (
-            <>
+            <div>
               <img className="w-full h-[150px] object-cover rounded-md mt-3" src={bloodDonationScreenshot} alt="Blood Donation App Screenshot" />
               <img className="w-full h-[150px] object-cover rounded-md mt-3" src={blooddashboard} alt="Blood Donation App Screenshot" />
-            </>
+            </div>
           )}
         </div>
 

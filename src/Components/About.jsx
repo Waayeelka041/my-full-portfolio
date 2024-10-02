@@ -5,7 +5,7 @@ import vedio from "../Images/shahaado.mp4";
 const About = () => {
   return (
     <div className="py-4 px-4 sm:px-[70px] bg-slate-50">
-      <h1 className="font-bold text-4xl text-center">About Me</h1>
+      <h1 className="font-bold text-4xl pb-4 text-center">About Me</h1>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-[100px] items-center">
         <video className="w-full sm:w-[400px] rounded-tr-[70px] rounded-bl-[70px]" autoPlay loop muted>
           <source src={vedio} type="video/mp4" />

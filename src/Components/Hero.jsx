@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-[70px] py-24 bg-slate-50">
       <div className="text-center sm:text-left">
         <h1 className="text-5xl sm:text-8xl font-bold mb-4">
-          Hi,<br />I'm <span className="text-blue-700">Anas Abdinasir</span> <br /> <span className="text-2xl sm:text-4xl">junior </span> <br /> fullstack Web Developer
+          Hi,<br />I'm <span className="text-blue-700">Anas Abdinasir</span> <br /> <span className="text-2xl sm:text-4xl">junior </span> <br /> Fullstack Web Developer
         </h1>
         <a 
           href="/Anas Abdinasir Ali's Cv.pdf" // Tani waa dariiqa saxda ah ee CV-gaaga
